@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Declare data variables if needed -->
+    <data>
+        <!-- You can declare variables or import statements here -->
+    </data>
+
+    <!-- Your original layout goes here -->
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!-- Time Display -->
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0d 00:00:00"
+            android:textSize="48sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp" />
+
+        <!-- Start/Stop Button -->
+        <Button
+            android:id="@+id/buttonStartStop"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_below="@id/textViewTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" />
+
+        <!-- Add/Subtract Buttons -->
+        <LinearLayout
+            android:id="@+id/linearLayoutButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonStartStop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonAddHour"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Add 1 Hour" />
+
+            <Button
+                android:id="@+id/buttonSubtractHour"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Subtract 1 Hour"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/buttonSubtract8Hours"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Subtract 8 Hours"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

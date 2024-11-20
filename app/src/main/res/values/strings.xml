@@ -1,0 +1,8 @@
+<!-- res/values/strings.xml -->
+<resources>
+    <string name="app_name">StopwatchApp</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="time_format">%1$dd %2$02d:%3$02d:%4$02d</string>
+    <!-- Add other strings if needed -->
+</resources>
